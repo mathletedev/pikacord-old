@@ -1,0 +1,8 @@
+# libraries
+/node_modules
+
+# output
+/dist
+
+# environment variables
+.env

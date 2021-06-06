@@ -1,0 +1,30 @@
+{
+	"name": "pikacord",
+	"version": "1.0.0",
+	"main": "dist/index.js",
+	"repository": "https://github.com/mathletedev/pikacord.git",
+	"author": {
+		"name": "mathletedev",
+		"email": "mathletedev@gmail.com"
+	},
+	"scripts": {
+		"watch": "tsc -w",
+		"dev": "nodemon dist/index.js"
+	},
+	"license": "MIT",
+	"private": true,
+	"dependencies": {
+		"dotenv-safe": "^8.2.0",
+		"eris": "^0.15.1",
+		"eris-sharder": "^1.10.0",
+		"pokedex-promise-v2": "^3.3.2",
+		"slash-create": "^3.2.3"
+	},
+	"devDependencies": {
+		"@types/eris-sharder": "^1.10.0",
+		"@types/node": "^15.12.1",
+		"@types/pokedex-promise-v2": "mudkipme/pokeapi-v2-typescript",
+		"nodemon": "^2.0.7",
+		"prettier": "^2.3.1"
+	}
+}
