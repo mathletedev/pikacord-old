@@ -14,11 +14,11 @@
 	"license": "MIT",
 	"private": true,
 	"dependencies": {
+		"discord-api-types": "^0.18.1",
 		"dotenv-safe": "^8.2.0",
 		"eris": "^0.15.1",
 		"eris-sharder": "^1.10.0",
-		"pokedex-promise-v2": "^3.3.2",
-		"slash-create": "^3.2.3"
+		"pokedex-promise-v2": "^3.3.2"
 	},
 	"devDependencies": {
 		"@types/eris-sharder": "^1.10.0",
