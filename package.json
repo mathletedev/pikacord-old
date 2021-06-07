@@ -14,16 +14,17 @@
 	"license": "MIT",
 	"private": true,
 	"dependencies": {
-		"discord-api-types": "^0.18.1",
+		"@types/common-tags": "^1.8.0",
+		"common-tags": "^1.8.0",
 		"dotenv-safe": "^8.2.0",
 		"eris": "^0.15.1",
-		"eris-sharder": "^1.10.0",
-		"pokedex-promise-v2": "^3.3.2"
+		"pokedex-promise-v2": "^3.3.2",
+		"slash-create": "^3.2.3"
 	},
 	"devDependencies": {
-		"@types/eris-sharder": "^1.10.0",
 		"@types/node": "^15.12.1",
 		"@types/pokedex-promise-v2": "mudkipme/pokeapi-v2-typescript",
+		"discord-api-types": "0.12.1",
 		"nodemon": "^2.0.7",
 		"prettier": "^2.3.1"
 	}

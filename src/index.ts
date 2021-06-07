@@ -1,8 +1,10 @@
 import "dotenv-safe/config";
-import { Master } from "eris-sharder";
+import Bot from "./bot";
 
-const _ = new Master(process.env.BOT_TOKEN!, "/dist/main.js", {
-	stats: true,
-	name: "Pikacord",
-	clientOptions: {}
+const bot = new Bot(process.env.BOT_TOKEN!, {
+	intents: ["guilds", "guildMembers", "guildPresences"]
 });
+
+bot.launch();
+
+export default bot;
