@@ -36,7 +36,7 @@ export default class Util {
 		if (memberReq.length > 0) {
 			ctx.send(
 				`🔑 You need to have ${this.join(
-					botReq.sort().map((perm) => `\`${this.camelToNormal(perm)}\``)
+					memberReq.sort().map((perm) => `\`${this.camelToNormal(perm)}\``)
 				)} to use this command!`,
 				{ ephemeral: true }
 			);

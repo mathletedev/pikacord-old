@@ -1,7 +1,6 @@
 import Eris, { Client, ClientOptions } from "eris";
 import { join } from "path";
 import { AnyRequestData, GatewayServer, SlashCreator } from "slash-create";
-import { __devGuild__ } from "./utils/constants";
 import Logger from "./utils/logger";
 import Util from "./utils/util";
 
@@ -41,7 +40,7 @@ export default class Bot {
 				)
 			)
 			.registerCommandsIn(join(__dirname, "commands"));
-		await this.creator.syncCommandsIn(__devGuild__);
+		await this.creator.syncCommands();
 
 		this.client.editStatus("online", {
 			name: "Pikacord",

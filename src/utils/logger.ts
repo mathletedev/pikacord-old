@@ -1,13 +1,13 @@
 export default class Logger {
-	public info(message: string) {
+	public info(message: any) {
 		console.log(`${this.time} Info | ${message}`);
 	}
 
-	public warn(message: string) {
+	public warn(message: any) {
 		console.warn(`${this.time} Warning | ${message}`);
 	}
 
-	public error(message: string, err?: any) {
+	public error(message: any, err?: any) {
 		console.error(`${this.time} ERROR | ${message}`);
 		console.error(err);
 	}
